@@ -31,7 +31,7 @@ const QuestionBox = ({ data, setIsQuestion }) => {
       {/* Content card */}
       <div className="relative z-20 w-full h-full flex -mt-20 items-center justify-center">
         <div className="w-[90%] max-w-xl bg-[#fef6ea] rounded-4xl p-10 shadow-2xl text-center flex flex-col items-center justify-center">
-          <p className="text-xl font-semibold pb-4">
+          <p className=" font-semibold pb-4 !text-4xl leading-2">
             {!showAnswer ? data?.question || "No Question" : 'data?.answer' || "No Answer"}
           </p>
 

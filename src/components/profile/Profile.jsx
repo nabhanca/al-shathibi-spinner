@@ -65,15 +65,16 @@ const Profile = ({userData}) => {
           <div className="w-1/2 bg-[#736153] rounded-l-full arabic text-white !py-3 text-2xl !px-6"> {userData.finalroundsurah? userData.finalroundsurah:userData.secondroundsurah}</div>
         </div>
 
-        <div className="w-2/3 mt-5 overflow-hidden relative bg-[#fef5ee] self-center flex justify-center gap-15 items-end shadow-[0_5px_15px_rgba(0,0,0,0.35)]  rounded-t-[70px] grow-1 !px-30">
+        <div className="w-2/3 mt-15 overflow-hidden relative bg-[#fef5ee] self-center flex justify-center gap-15 items-end shadow-[0_5px_15px_rgba(0,0,0,0.35)]  rounded-t-[70px] grow-1 !px-30">
         <img src={v2} className='absolute -top-40 -left-40 w-130 z-1 opacity-65' alt="" />
         <div className="w-1/2 flex justify-end z-10 relative">
-        <div className="w-55 h-75 bg-[#c5ae9c] rounded-t-full flex justify-center border-4 shadow-2xl border-white ">
+        <div className="w-55 h-80 bg-[#c5ae9c] rounded-t-full flex justify-center border-4 shadow-2xl border-white ">
           <img src={img&&img} className='w-35 h-35 rounded-full  object-cover !-mt-20 border-6 shadow-4xl border-[#736153]' alt="" />
         </div>
         </div>
-        <div className="w-2/3 h-60 z-10 relative">
-          <h1 className='font-bold text-3xl !-mt-30 uppercase  leading'>{userData.name} </h1>
+        <div className="w-2/3 h-70 z-10 relative !mb-35">
+          <p className='text-2xl'>STB NO: <span className=' !pl-1 uppercase text-2xl font-medium'>{userData.code}</span> </p>
+          <h1 className='font-bold text-3xl  uppercase  leading'>{userData.name} </h1>
           <p className='-mt-2 text-sm'>{userData.place}</p>
           <p className='!mt-3'>STB NO: <span className=' !pl-1 uppercase font-medium'>{userData.code}</span> </p>
 <div className="flex items-start gap-1">
