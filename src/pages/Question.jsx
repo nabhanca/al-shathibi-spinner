@@ -147,12 +147,12 @@ function Question() {
         <div>
             {isQuestion && <QuestionBox setIsQuestion={setIsQuestion} data={currentQuestion} />}
             {raviQuestion ?
-                <div className="bg-[#e9e5df] h-screen !overflow-hidden relative "  >
+                <div className="bg-[#e9e5df] h-screen  !overflow-hidden relative "  >
                     <img src={bg} className="absolute inset-0  z-1 opacity-50" alt="" />
                     <div className="relative items-stretch z-10 flex justify-center  h-full gap-4 p-20">
-                        <div className="bg-[#fef6ea] p-4 flex flex-col items-center justify-center w-1/3 rounded-4xl shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
+                        <div className="bg-[#fef6ea] p-4 flex flex-col items-center  justify-center w-1/4 rounded-4xl shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
 
-                            <h2 className='font-bold py-2 pb-4'>Lets Choose</h2>
+                            <h2 className='font-bold py-2 pb-4'>الرواة</h2>
 
 
                             <div className="flex flex-wrap items-center justify-center  gap-x-8 gap-y-4">
@@ -162,11 +162,11 @@ function Question() {
                                         <>
                                             {!item.isOpen ?
                                                 <div data-aos="fade-up">
-                                                    <div onClick={() => handleRaviQuestion(item)} className="bg-[#b19e86] w-28 h-28 text-center rounded-3xl flex items-center justify-center text-3xl shadow-4xl font-bold text-[#fef7eb] border-6 border-[#f2e3ca] hover:scale-105 transition-transform duration-300" key={index} >{index + 1}</div>
+                                                    <div onClick={() => handleRaviQuestion(item)} className="bg-[#b19e86] w-25 h-25 text-center  rounded-3xl flex items-center justify-center text-3xl shadow-4xl font-bold text-[#fef7eb] border-6 border-[#f2e3ca] hover:scale-105 transition-transform duration-300" key={index} >{index + 1}</div>
 
                                                 </div> :
                                                 <div data-aos="fade-up">
-                                                    <div className="bg-[#b19e86] w-28 h-28 text-center rounded-3xl flex items-center justify-center text-3xl shadow-4xl font-bold text-[#fef7eb] border-6 border-[#f2e3ca] hover:scale-105 transition-transform duration-300"><FaLock /></div>
+                                                    <div className="bg-[#b19e86] w-25 h-25 text-center rounded-3xl flex items-center justify-center text-3xl shadow-4xl font-bold text-[#fef7eb] border-6 border-[#f2e3ca] hover:scale-105 transition-transform duration-300"><FaLock /></div>
                                                 </div>
                                             }
 

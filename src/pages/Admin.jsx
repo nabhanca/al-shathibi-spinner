@@ -189,7 +189,7 @@ export default function Admin() {
               {recitedCount}/{candidates.length} recited
             </span>
           </div>
-          <button className="border-2" onClick={()=>importJson('auto','samplecandidates')}>import</button>
+          <button className="border-2" onClick={()=>importJson('auto','uloomquestions')}>import</button>
         </header>
 
         <div className="grid lg:grid-cols-3 gap-8">

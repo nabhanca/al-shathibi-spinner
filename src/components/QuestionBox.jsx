@@ -29,20 +29,20 @@ const QuestionBox = ({ data, setIsQuestion }) => {
       </button>
 
       {/* Content card */}
-      <div className="relative z-20 w-full h-full flex items-center justify-center">
+      <div className="relative z-20 w-full h-full flex -mt-20 items-center justify-center">
         <div className="w-[90%] max-w-xl bg-[#fef6ea] rounded-4xl p-10 shadow-2xl text-center flex flex-col items-center justify-center">
           <p className="text-xl font-semibold pb-4">
             {!showAnswer ? 'data?.question' || "No Question" : 'data?.answer' || "No Answer"}
           </p>
 
-          {!showAnswer && (
+          {/* {!showAnswer && (
             <button
               onClick={() => setShowAnswer(true)}
               className="mt-4 bg-[#634e2f] text-white px-6 py-2 rounded-3xl font-semibold hover:bg-[#f8e4c6] hover:text-black transition"
             >
               Show Answer
             </button>
-          )}
+          )} */}
         </div>
       </div>
     </div>

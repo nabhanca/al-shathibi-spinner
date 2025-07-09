@@ -76,7 +76,7 @@ useEffect(() => {
           {spinData? 
           <div data-aos="zoom-in-up">
 
-            <div className="bg-[#fdf9ee] relative overflow-hidden flex flex-col justify-center items-center py-5 px-10 rounded-4xl shadow-2xl">
+            <div className="bg-[#fdf9ee] relative overflow-hidden -mt-20 flex flex-col justify-center items-center py-5 px-10 rounded-4xl shadow-2xl">
               <img src={typo} className='w-50 pt-2' alt="" />
               <span className='absolute top-8 right-8 z-5 bg-[#736153] text-white p-1 rounded-full' onClick={() => setIsPopup(false)}><IoClose /></span>
 
@@ -101,7 +101,7 @@ useEffect(() => {
           
           :
           <div data-aos="zoom-in-up">
-        <div className="bg-[#fdf9ee] min-w-120 relative overflow-hidden flex flex-col justify-center items-center py-5 px-10 rounded-4xl shadow-2xl">
+        <div className="bg-[#fdf9ee] -mt-20 min-w-120 relative overflow-hidden flex flex-col justify-center items-center py-5 px-10 rounded-4xl shadow-2xl">
               <img src={typo} className='w-60 pt-2' alt="" />
               {/* <span className='absolute top-8 right-8 z-5 bg-[#736153] text-white p-1 rounded-full' ><IoClose /></span> */}
 

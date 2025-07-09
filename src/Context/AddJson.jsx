@@ -1,6 +1,6 @@
 import { collection, doc, writeBatch, addDoc } from "firebase/firestore";
 import { db } from "../Firebase Folder/FirebaseConfig";
-import { cnad } from "../Context/Json";
+import { uloomquestion } from "../Context/Json";
 
 /**
  * Import the ravis array.
@@ -10,7 +10,7 @@ export async function importJson(mode = "fixed",database) {
   if (mode === "auto") {
     // Auto-generate document IDs
    await Promise.all(
-  cnad.map(r => addDoc(collection(db, database),r))
+  uloomquestion.map(r => addDoc(collection(db, database),r))
 );
 
     console.log("✅ Ravis imported with auto‑generated IDs!");

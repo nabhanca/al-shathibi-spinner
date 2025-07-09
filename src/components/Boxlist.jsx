@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaLock } from "react-icons/fa";
 
 const BoxList = ({ items = [],handleUloomQuestion }) => {
-  const ITEMS_PER_PAGE = 10;
+  const ITEMS_PER_PAGE = 6;
   const [page, setPage] = useState(0);
 
   const totalPages = Math.max(1, Math.ceil(items.length / ITEMS_PER_PAGE));
@@ -16,9 +16,9 @@ const BoxList = ({ items = [],handleUloomQuestion }) => {
 
   return (
     <div className="bg-[#fef6ea] p-4 flex flex-col items-center
-                    justify-center w-2/3 rounded-4xl shadow-[0_5px_15px_rgba(0,0,0,0.35)] h-full">
+                    justify-center w-2/4 rounded-4xl shadow-[0_5px_15px_rgba(0,0,0,0.35)] h-full">
 
-      <h2 className="font-bold py-2 pb-4">Let's Choose</h2>
+      <h2 className="font-bold py-2 pb-4">علوم القرآن</h2>
 
       <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
         {visible.map((item, idx) => {
