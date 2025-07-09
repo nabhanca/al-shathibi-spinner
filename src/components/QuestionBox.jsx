@@ -32,7 +32,7 @@ const QuestionBox = ({ data, setIsQuestion }) => {
       <div className="relative z-20 w-full h-full flex -mt-20 items-center justify-center">
         <div className="w-[90%] max-w-xl bg-[#fef6ea] rounded-4xl p-10 shadow-2xl text-center flex flex-col items-center justify-center">
           <p className="text-xl font-semibold pb-4">
-            {!showAnswer ? 'data?.question' || "No Question" : 'data?.answer' || "No Answer"}
+            {!showAnswer ? data?.question || "No Question" : 'data?.answer' || "No Answer"}
           </p>
 
           {/* {!showAnswer && (
