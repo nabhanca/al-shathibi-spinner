@@ -1,0 +1,275 @@
+.btn1 {
+    border: none;
+    outline: none;
+    padding: 8px 32px;
+    font-size: 14px;
+    border-radius: 32px;
+    color: #4f4b3c;
+    background: #aca38e;
+    transition: all ease 0.4s;
+
+    &:hover {
+        background-color: #4f4b3c;
+        color: #aca38e;
+    }
+}
+
+.btn2 {
+    border: 1px solid #aca38e;
+    outline: none;
+    padding: 8px 22px;
+    margin-left: 16px;
+    font-size: 14px;
+    border-radius: 32px;
+    /* color: #4f4b3c; */
+    color: #aca38e;
+
+    background: transparent;
+    transition: all ease 0.4s;
+
+    &:hover {
+        background-color: #4f4b3c;
+        color: #aca38e;
+    }
+}
+
+.main {
+
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background: #f7cc75;
+    display: flex;
+   align-items: center;
+   /* justify-content: space-evenly; */
+    position: relative;
+
+
+    .main-wrapper {
+        position: relative;
+
+        border-radius: 40px;
+        background-image: url('../../assets/images/bg.webp');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        .img-section {
+            align-self: flex-end;
+            position: relative;
+            /* width: 290px; */
+            margin-top: 200px;
+            height: 400px;
+            animation-name: example;
+            animation-duration: 750ms;
+            color: #fff ;
+            animation-timing-function: ease-out;
+            border-radius: 65px 65px 0 0;
+
+            /* background: #000; */
+            .img {
+
+
+                .img1 {
+                    border: 8px solid hsl(41, 23%, 68%);
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                    position: absolute;
+                    top: -90px;
+                    object-fit: cover;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50%;
+                    background: #d4cab3;
+                    width: 150px;
+                    height: 150px;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 22px;
+                    color: #221f16;
+                    font-weight: 700;
+                    margin-top: 120px;
+                    line-height: 14px;
+                    color: #fff ;
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            background-color: #3b2f1b;
+
+            .details {
+                padding: 45px 25px;
+                font-size: 14px;
+                color: #fff ;
+                max-width: 300px;
+                margin-left: 18px;
+
+                p {
+                    font-weight: 600;
+
+                    span {
+                        font-weight: 400;
+                    }
+                }
+
+                .institution {
+                    line-height: 14px;
+                    margin-top: 20px;
+                }
+
+            }
+        }
+    }
+}
+
+.info-section {
+    margin-right: -60px;
+    img {
+        width: 300px;
+        margin-bottom: 40px;
+        animation-name: imgAnimation;
+        animation-duration: 750ms;
+        animation-delay: 800ms;
+        animation-timing-function: ease-out;
+    }
+
+    .ravi {
+        position: absolute;
+        background-color: #3b2f1b;
+        padding: 8px 0;
+        width: 480px;
+        padding-left: 20px;
+        border-radius: 20px 0 0 20px;
+        right: 0;
+        text-align: left;
+        font-size: 25px;
+        font-family: "ae_AlMothnna Bold";
+        color: hsl(0, 0%, 100%);
+        p{
+        font-family: "ae_AlMothnna Bold";
+
+        }
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* padding-right:190PX; */
+
+        &.surah{
+            transform: translateY(80px);
+        }
+
+        span {
+
+
+            background-color: #221f16;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            border-radius: 12px;
+        }
+    }
+
+    .btn-section {
+        margin-top: 120px;
+
+        .btn2 {
+            margin-right: 10px;
+        }
+
+    }
+
+
+}
+
+.bottom {
+    /* display: none; */
+}
+
+@media only screen and (max-width: 992px) {
+.main{
+    min-height: 100vh;
+    height: auto;
+
+    .container {
+        width: 100%;
+     height: 100vh;
+        .main-wrapper {
+            position: relative;
+            z-index: 11111;
+            border-radius: 0;
+            min-height: 100vh !important;
+            /* overflow: hidden; */
+            height: auto;
+
+            /* margin:  30px 0; */
+            flex-direction: column;
+
+            gap: 0px !important;
+
+            .img-section {
+                align-self: center !important;
+                margin-top: 215px;
+                animation-name: imgAnimation;
+                animation-duration: 750ms;
+                animation-delay: 800ms;
+                animation-timing-function: ease-out;
+                order: 2;
+            }
+
+            .info-section {
+                order: 1;
+
+                /* margin: 00px !important; */
+                img {
+                    width: 250px;
+                    padding-top: 30px;
+                }
+                .ravi{
+              text-align: center;
+              left: 0;
+              width: 100%;
+              padding-left: 0;
+              border-radius: 0;
+              right: 0;
+                }
+    
+            }
+       
+            .bottom {
+                position: absolute;
+                /* top: 200px; */
+                bottom: 0;
+                height: 200px;
+                /* z-index: 1111111; */
+                z-index: -1;
+                width: 100%;
+                background-color: #3b2f1b;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
+}
+
+@keyframes example {
+    0%   {margin-top: 500px;}
+
+    100% {margin-top: 200px;}
+  }
+  /* @keyframes imgAnimation {
+    0%   {margin-bottom: -500px;}
+
+    100% {margin-bottom: 200px;}
+  } */

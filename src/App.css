@@ -1,0 +1,66 @@
+/* color1:
+color2:#aca38e
+color3: */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/182414135ae67bc66f6425f95c0bc2ec?family=ae_AlMothnna+Bold');
+
+@font-face {
+    font-family: "ae_AlMothnna Bold";
+    src: url("https://db.onlinewebfonts.com/t/182414135ae67bc66f6425f95c0bc2ec.eot");
+    src: url("https://db.onlinewebfonts.com/t/182414135ae67bc66f6425f95c0bc2ec.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/182414135ae67bc66f6425f95c0bc2ec.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/182414135ae67bc66f6425f95c0bc2ec.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/182414135ae67bc66f6425f95c0bc2ec.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/182414135ae67bc66f6425f95c0bc2ec.svg#ae_AlMothnna Bold")format("svg");
+}
+
+*{
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.arabic{
+ font-family: "ae_AlMothnna Bold" !important;
+}
+.hidden{
+    overflow: hidden !important;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    width: 90%;
+
+}
+.btn1 {
+    border: none;
+    outline: none;
+    padding: 8px 32px;
+    font-size: 14px;
+    border-radius: 32px;
+    color: #4f4b3c;
+    background: #aca38e;
+    transition: all ease 0.4s;
+
+    &:hover {
+        background-color: #4f4b3c;
+        color: #aca38e;
+    }
+}
+.btn2 {
+    border: 1px solid #aca38e;
+    outline: none;
+    padding: 8px 22px;
+    margin-left: 16px;
+    font-size: 14px;
+    border-radius: 32px;
+    /* color: #4f4b3c; */
+    color: #aca38e;
+
+    background: transparent;
+    transition: all ease 0.4s;
+
+    &:hover {
+        background-color: #4f4b3c;
+        color: #aca38e;
+    }
+}
